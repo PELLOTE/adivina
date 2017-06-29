@@ -1,26 +1,110 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_0" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="primeraApp" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Intentos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EZr-hu-nrQ">
+                                <rect key="frame" x="75" y="168" width="65" height="34"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="34" id="3Fg-hP-y1w"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivina un numero del 0-9" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EPp-XW-dXV">
+                                <rect key="frame" x="80" y="242" width="203" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iig-7w-GQE">
+                                <rect key="frame" x="16" y="95" width="288" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="u6f-Vh-jFo"/>
+                                </constraints>
+                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Adivina el numero" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W80-Ju-Wp2">
+                                <rect key="frame" x="16" y="28" width="288" height="25"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="25" id="1ep-9P-kw7"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="5" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MYg-Ea-V9k">
+                                <rect key="frame" x="148" y="165" width="76" height="38"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="76" id="4nB-pS-PmC"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0I-jW-88K">
+                                <rect key="frame" x="58" y="298" width="206" height="46"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="206" id="I1T-80-LMC"/>
+                                </constraints>
+                                <state key="normal" title="Adivina"/>
+                                <connections>
+                                    <action selector="validarbt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="KN4-Qz-8iX"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="W80-Ju-Wp2" firstAttribute="leading" secondItem="iig-7w-GQE" secondAttribute="leading" id="2PW-z5-rR7"/>
+                            <constraint firstItem="W80-Ju-Wp2" firstAttribute="trailing" secondItem="iig-7w-GQE" secondAttribute="trailing" id="2dO-I4-0k0"/>
+                            <constraint firstItem="EZr-hu-nrQ" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="59" id="7Zz-SX-yFt"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="C0I-jW-88K" secondAttribute="bottom" constant="224" id="DzC-K2-GMz"/>
+                            <constraint firstItem="EPp-XW-dXV" firstAttribute="top" secondItem="MYg-Ea-V9k" secondAttribute="bottom" constant="39" id="HQP-rk-wcA"/>
+                            <constraint firstItem="EPp-XW-dXV" firstAttribute="top" secondItem="EZr-hu-nrQ" secondAttribute="bottom" constant="40" id="Q1A-00-GQI"/>
+                            <constraint firstItem="EPp-XW-dXV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="64" id="UFO-wB-G8n"/>
+                            <constraint firstItem="C0I-jW-88K" firstAttribute="top" secondItem="EPp-XW-dXV" secondAttribute="bottom" constant="35" id="W27-vq-xRC"/>
+                            <constraint firstItem="MYg-Ea-V9k" firstAttribute="top" secondItem="iig-7w-GQE" secondAttribute="bottom" constant="34" id="Z3x-Et-pnT"/>
+                            <constraint firstItem="EZr-hu-nrQ" firstAttribute="top" secondItem="iig-7w-GQE" secondAttribute="bottom" constant="37" id="Zpe-cd-yFP"/>
+                            <constraint firstItem="C0I-jW-88K" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="42" id="aHI-pv-DTQ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="MYg-Ea-V9k" secondAttribute="trailing" constant="80" id="dwn-6e-sqA"/>
+                            <constraint firstItem="W80-Ju-Wp2" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailingMargin" id="gQo-EH-RIo"/>
+                            <constraint firstItem="W80-Ju-Wp2" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" id="kLF-lT-6QC"/>
+                            <constraint firstItem="W80-Ju-Wp2" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="8" symbolic="YES" id="nrL-ad-Tkf"/>
+                            <constraint firstItem="iig-7w-GQE" firstAttribute="top" secondItem="W80-Ju-Wp2" secondAttribute="bottom" constant="42" id="rOQ-YE-U7c"/>
+                            <constraint firstItem="MYg-Ea-V9k" firstAttribute="leading" secondItem="EZr-hu-nrQ" secondAttribute="trailing" constant="8" symbolic="YES" id="wvz-3X-u18"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="instentoslbl" destination="MYg-Ea-V9k" id="39M-Xt-RSb"/>
+                        <outlet property="mensajelbl" destination="EPp-XW-dXV" id="cgX-iZ-V2L"/>
+                        <outlet property="numbertxt" destination="iig-7w-GQE" id="8O6-l9-kbF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-80.625" y="137.32394366197184"/>
         </scene>
     </scenes>
 </document>
